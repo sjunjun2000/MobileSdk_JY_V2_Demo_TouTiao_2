@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingTop="@dimen/jy_padding_waiting_dialog"
+    android:paddingBottom="@dimen/jy_padding_login_dialog"
+    android:paddingLeft="@dimen/jy_spacing_waiting_dialog"
+    android:paddingRight="@dimen/jy_spacing_waiting_dialog">
+
+    <include
+        android:id="@+id/rlLoginBack"
+        layout="@layout/jy_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/web_agreement"
+        android:layout_alignLeft="@id/web_agreement"/>
+
+    <TextView
+        android:id="@+id/tv_you9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlLoginBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/jy_margin_login_dialog"
+        android:gravity="center"
+        android:text="@string/jy_uname_register_dialog_user_protocol"
+        android:textColor="@color/jy_color_text"
+        android:textSize="@dimen/jy_size_accounts_popup" />
+
+    <WebView
+        android:id="@+id/web_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_you9"
+        android:scrollbars="none"/>
+
+
+
+
+</RelativeLayout>

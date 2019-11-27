@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/jy_activity_margin"
+    tools:context=".activity.JyAlipayActivity" >
+
+    <TextView
+        android:id="@+id/alipayOrderIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="50.0dip"
+        android:text="@string/jy_activity_orderno"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/alipayOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/alipayOrderIdTextView"
+        android:layout_marginLeft="15.0dip"
+        android:layout_toRightOf="@id/alipayOrderIdTextView"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/alipayUserNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alipayOrderIdTextView"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/jy_activity_user"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/alipayUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/alipayUserNameTextView"
+        android:layout_marginLeft="15.0dip"
+        android:layout_toRightOf="@id/alipayUserNameTextView"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/alipayGameInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alipayUserNameTextView"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/jy_activity_paygame"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/alipayGameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/alipayGameInfoTextView"
+        android:layout_marginLeft="15.0dip"
+        android:layout_toRightOf="@id/alipayGameInfoTextView"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/alipayCustomInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alipayGameInfoTextView"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/jy_activity_tel"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/alipayCustomInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/alipayCustomInfoTextView"
+        android:layout_marginLeft="15.0dip"
+        android:layout_toRightOf="@id/alipayCustomInfoTextView"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/alipayAmountInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alipayCustomInfoTextView"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/jy_activity_money"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/alipayAmountInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/alipayAmountInfoTextView"
+        android:layout_marginLeft="15.0dip"
+        android:layout_toRightOf="@id/alipayAmountInfoTextView"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/alipaybtnOK"
+        style="@style/ButtonStyle"
+        android:text="@string/jy_activity_alipay"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/jy_padding_accounts_vertical"
+    android:paddingLeft="@dimen/jy_padding_accounts_horizontal"
+    android:paddingRight="@dimen/jy_padding_accounts_horizontal"
+    android:paddingTop="@dimen/jy_padding_accounts_vertical" >
+
+    <TextView
+        android:id="@+id/text_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:textSize="@dimen/jy_size_large_login_dialog"
+        android:singleLine="true"/>
+
+    <ImageButton
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/jy_login_dialog_title"
+        android:src="@mipmap/jy_ic_clear"
+        android:visibility="invisible"/>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingTop="@dimen/jy_spacing_tab_register"
+    android:paddingBottom="@dimen/jy_spacing_tab_register"
+    android:paddingLeft="@dimen/jy_spacing_login_dialog">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvOrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111111111111111111"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/jy_size_normal_login_dialog"/>
+        <TextView
+            android:id="@+id/tvCreateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-05-02 12:00"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/jy_size_normal_login_dialog"/>
+
+        <TextView
+            android:id="@+id/tvHistoryOrderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新手礼包"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/jy_size_normal_login_dialog"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jy_activity_history_order_price"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/jy_size_large_login_dialog"/>
+
+        <TextView
+            android:id="@+id/tvPayStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jy_activity_history_order_price"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/jy_size_large_login_dialog"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

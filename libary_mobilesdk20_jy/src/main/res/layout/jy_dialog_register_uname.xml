@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jy_login_bg"
+    android:paddingLeft="@dimen/jy_padding_forgot_dialog"
+    android:paddingTop="@dimen/jy_padding_waiting_dialog"
+    android:paddingRight="@dimen/jy_padding_forgot_dialog"
+    android:paddingBottom="@dimen/jy_padding_forgot_dialog">
+
+    <include
+        android:id="@+id/rlLoginBack"
+        layout="@layout/jy_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ll_login_info"
+        android:layout_alignRight="@id/ll_login_info" />
+
+    <TextView
+        android:id="@+id/tv_you9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlLoginBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:text="@string/jy_uname_register_dialog_title"
+        android:textColor="@color/jy_color_text"
+        android:textSize="@dimen/jy_size_accounts_popup" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_you9"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/jy_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignRight="@id/ll_login_info"
+        android:layout_alignLeft="@id/ll_login_info">
+
+        <EditText
+            android:id="@+id/edit_register_account"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/jy_login_dialog_account_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/jy_color_text_hint"
+            android:textSize="@dimen/jy_size_large_login_dialog">
+
+            <requestFocus />
+        </EditText>
+
+
+        <ImageButton
+            android:id="@+id/ib_account_more"
+            android:layout_width="@dimen/jy_size_clear_icon"
+            android:layout_height="@dimen/jy_size_clear_icon"
+            android:layout_marginLeft="@dimen/jy_margin_clear_icon"
+            android:src="@mipmap/jy_ic_clear"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/jy_login_dialog_title"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/clear_edit_account"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/jy_login_dialog_title"
+            android:paddingLeft="@dimen/jy_left_more_icon"
+            android:paddingRight="@dimen/jy_margin_login_dialog"
+            android:src="@mipmap/jy_ic_clear" />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/ib_account_more"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:paddingLeft="@dimen/jy_left_more_icon"-->
+            <!--android:paddingRight="@dimen/jy_right_more_icon"-->
+            <!--android:src="@drawable/jy_selector_login_more"-->
+            <!--android:visibility="invisible" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/clear_edit_account"-->
+            <!--android:layout_width="@dimen/jy_size_clear_icon"-->
+            <!--android:layout_height="@dimen/jy_size_clear_icon"-->
+            <!--android:paddingLeft="@dimen/jy_left_more_icon"-->
+            <!--android:paddingRight="@dimen/jy_margin_login_dialog"-->
+            <!--android:src="@mipmap/jy_ic_clear"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:contentDescription="@string/jy_login_dialog_title"/>-->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_register_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/jy_margin_login_dialog"
+        android:background="@mipmap/jy_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignRight="@id/ll_login_info"
+        android:layout_alignLeft="@id/ll_login_info">
+
+        <EditText
+            android:id="@+id/edit_register_password"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/jy_login_dialog_password_hint"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/jy_color_text_hint"
+            android:textSize="@dimen/jy_size_large_login_dialog" />
+
+
+
+        <ImageButton
+            android:id="@+id/clear_edit_uname_password"
+            android:layout_width="@dimen/jy_size_clear_icon"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/jy_margin_clear_icon"
+            android:src="@mipmap/jy_ic_clear"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/jy_login_dialog_title"/>
+
+        <ImageButton
+            android:id="@+id/ib_register_uname_show_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/jy_login_dialog_title"
+            android:paddingLeft="@dimen/jy_left_more_icon"
+            android:paddingRight="@dimen/jy_margin_login_dialog"
+            android:src="@mipmap/jy_eyes" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_vcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_register_pwd"
+        android:layout_alignLeft="@id/ll_register_pwd"
+        android:layout_alignRight="@id/ll_register_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/jy_margin_login_dialog"
+        android:background="@mipmap/jy_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edit_register_uname_vcode"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/jy_uname_register_dialog_vcode_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/jy_color_text_hint"
+            android:textSize="@dimen/jy_size_large_login_dialog">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_reg_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_register_pwd"
+        android:layout_alignRight="@id/ll_login_info"
+        android:layout_alignLeft="@id/ll_login_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/jy_size_register_large"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_uname_register"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/jy_height_sms_btn"
+            android:layout_weight="1"
+            android:background="@drawable/jy_btn_login_corner_orange_bg"
+            android:text="@string/jy_uname_register_dialog_confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/jy_size_large_login_dialog" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_reg_log"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_alignRight="@id/ll_login_info"
+        android:layout_alignLeft="@id/ll_login_info">
+
+        <CheckBox
+            android:id="@+id/check_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/jy_selector_checkbox"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="@string/jy_uname_register_dialog_protocol"
+            android:textColor="@color/jy_color_text_hint"
+            android:textSize="@dimen/jy_size_normal_login_dialog" />
+
+        <TextView
+            android:id="@+id/tv_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jy_uname_register_dialog_user_protocol"
+            android:textColor="@color/jy_color_text"
+            android:textSize="@dimen/jy_size_normal_login_dialog" />
+
+        <TextView
+            android:id="@+id/tv_private_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jy_uname_register_dialog_user_private_protocol"
+            android:textColor="@color/jy_color_text"
+            android:textSize="@dimen/jy_size_normal_login_dialog" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_login_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/jy_margin_login_dialog"
+        android:layout_marginBottom="@dimen/jy_spacing_login_dialog"
+        android:background="@mipmap/jy_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/edit_password"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/jy_login_dialog_password_hint"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/jy_color_text_hint"
+            android:textSize="@dimen/jy_size_large_login_dialog" />
+
+        <ImageButton
+            android:id="@+id/clear_edit_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/jy_margin_clear_icon"
+            android:src="@mipmap/jy_ic_clear"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/jy_login_dialog_title"/>
+
+        <ImageButton
+            android:id="@+id/ib_login_show_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/jy_login_dialog_title"
+
+            android:paddingLeft="@dimen/jy_left_more_icon"
+            android:paddingRight="@dimen/jy_margin_login_dialog"
+            android:src="@mipmap/jy_eyes" />
+
+
+    </LinearLayout>
+
+
+    <!--注册成功后保存图片样式-->
+    <RelativeLayout
+        android:id="@+id/rl_register_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/jy_dialog_bg"
+        android:visibility="invisible"
+        android:layout_alignRight="@id/ll_login_info"
+        android:layout_alignLeft="@id/ll_login_info">
+
+        <TextView
+            android:id="@+id/tv_register_info_you9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/jy_spacing_login_dialog"
+            android:gravity="center"
+            android:text="@string/jy_uname_register_dialog_your_account"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jy_register_info_pic_tips"
+            android:layout_below="@id/tv_register_info_you9"
+            android:layout_marginTop="@dimen/jy_padding_login_btn"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_register_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tips"
+            android:layout_marginBottom="@dimen/jy_spacing_login_dialog"
+            android:background="@android:drawable/edit_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_account"
+                style="@style/EditTextStyle"
+
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:ems="10"
+                android:inputType="text"
+                android:singleLine="true"
+                android:gravity="center_vertical">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_register_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_register_account"
+            android:layout_marginBottom="@dimen/jy_spacing_login_dialog"
+            android:background="@android:drawable/edit_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_password"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:singleLine="true"
+                android:gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

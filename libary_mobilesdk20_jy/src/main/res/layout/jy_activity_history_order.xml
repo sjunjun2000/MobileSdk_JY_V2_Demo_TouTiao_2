@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/jy_bg_gray_pay">
+
+    <include layout="@layout/jy_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/jy_bg_history_order_dark_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/jy_paysuccess_margin"
+            android:text="@string/jy_activity_history_order_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/jy_size_pay" />
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/jy_history_order_btn_height"
+            android:src="@mipmap/jy_arrow_back"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/jy_left_more_icon"/>
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="@dimen/jy_history_order_btn_width"
+            android:layout_height="@dimen/jy_history_order_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/jy_left_more_icon"
+            android:background="@drawable/jy_refresh_btn_bg_corner_white"
+            android:gravity="center"
+            android:text="@string/jy_activity_history_order_refresh"
+            android:textColor="@color/jy_blue"
+            android:textSize="@dimen/jy_size_normal_waiting_dialog" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvHistoryOrderNone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/jy_pay_lookup_activity_history_none"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lvHistoryOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/jy_spacing_login_dialog"
+        android:layout_margin="@dimen/jy_margin_login_dialog"
+        android:scrollbars="none"/>
+
+
+</LinearLayout>

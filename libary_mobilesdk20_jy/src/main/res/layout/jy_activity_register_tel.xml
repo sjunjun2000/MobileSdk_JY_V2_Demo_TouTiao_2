@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/jy_padding_register_fragment" >
+
+        <LinearLayout
+            android:id="@+id/linear_current_cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/jy_spacing_tab_register"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/jy_spacing_tab_register"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jy_activity_register_current_cellphone"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/text_current_cellphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/jy_color_9you_login_blue" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/check_input_cellphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/jy_selector_checkbox"
+                android:text="@string/jy_activity_register_other_cellphone"
+                android:textSize="@dimen/jy_size_register_small"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/jy_spacing_login_dialog"
+            android:background="@android:drawable/edit_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/edit_cellphone"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/jy_activity_register_cellphone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/clear_edit_cellphone"
+                android:layout_width="@dimen/jy_size_clear_icon"
+                android:layout_height="@dimen/jy_size_clear_icon"
+                android:layout_marginLeft="@dimen/jy_margin_clear_icon"
+                android:background="@drawable/jy_selector_ic_clear"
+                android:contentDescription="@string/jy_login_dialog_title"
+                android:src="@drawable/jy_selector_ic_clear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/jy_spacing_login_dialog"
+            android:background="@android:drawable/edit_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edit_password"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/jy_activity_register_password"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/clear_edit_password"
+                android:layout_width="@dimen/jy_size_clear_icon"
+                android:layout_height="@dimen/jy_size_clear_icon"
+                android:layout_marginLeft="@dimen/jy_margin_clear_icon"
+                android:background="@drawable/jy_selector_ic_clear"
+                android:contentDescription="@string/jy_login_dialog_title"
+                android:src="@drawable/jy_selector_ic_clear" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/check_show_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/jy_spacing_tab_register"
+            android:button="@drawable/jy_selector_checkbox"
+            android:text="@string/jy_activity_register_password_show"
+            android:textSize="@dimen/jy_size_register_small"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/jy_spacing_tab_register"
+            android:background="@drawable/jy_selector_register_btn"
+            android:padding="@dimen/jy_spacing_tab_register"
+            android:text="@string/jy_activity_register_register"
+            android:textColor="@color/jy_selector_register_btn"
+            android:textSize="@dimen/jy_size_register_large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/check_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/jy_selector_checkbox"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/text_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/jy_activity_register_protocol"
+                android:textColor="@color/jy_color_9you_login_blue"
+                android:textSize="@dimen/jy_size_register_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

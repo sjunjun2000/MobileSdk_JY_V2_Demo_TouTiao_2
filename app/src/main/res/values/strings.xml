@@ -1,0 +1,18 @@
+<resources>
+    <string name="appName">MobileSDK20_JY</string>
+
+    <!-- MainActivity -->
+    <string name="jy_main_init">初始化</string>
+    <string name="jy_main_login">登录</string>
+    <string name="jy_main_pay">支付</string>
+    <string name="jy_main_logout">注销</string>
+    <string name="jy_main_switch_account">切换帐号</string>
+    <string name="jy_main_float_view">悬浮球</string>
+    <string name="jy_main_create_role">游戏创角dataUpload</string>
+    <string name="jy_main_game_loading">游戏加载dataUpload</string>
+    <string name="jy_main_game_currency">游戏币消费dataUpload</string>
+    <string name="jy_main_game_rmb_consume">人民币消费dataUpload</string>
+    <string name="jy_main_game_close">游戏关闭dataUpload</string>
+    <string name="jy_main_auto_login">自动登录</string>
+    <string name="jy_main_account_record">记录帐号</string>
+</resources>

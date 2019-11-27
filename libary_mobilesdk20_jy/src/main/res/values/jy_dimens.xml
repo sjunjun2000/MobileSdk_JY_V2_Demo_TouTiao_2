@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="jy_activity_margin">16dp</dimen>
+    <dimen name="jy_img_size">80dp</dimen>
+
+    <!-- login demo -->
+    <dimen name="jy_padding_login_btn">12dp</dimen>
+    <dimen name="jy_padding_login_dialog">25dp</dimen>
+    <dimen name="jy_padding_forgot_dialog">20dp</dimen>
+    <dimen name="jy_margin_login_dialog">10dp</dimen>
+    <dimen name="jy_spacing_login_dialog">5dp</dimen>
+    <dimen name="jy_size_normal_login_dialog">14sp</dimen>
+    <dimen name="jy_size_nnormal_login_dialog">15sp</dimen>
+    <dimen name="jy_size_large_login_dialog">16sp</dimen>
+    <dimen name="jy_margin_waiting_dialog">35dp</dimen>
+    <dimen name="jy_margin_forgot_dialog">20dp</dimen>
+    <dimen name="jy_margin_top_waiting_dialog">60dp</dimen>
+    <dimen name="jy_padding_waiting_dialog">15dp</dimen>
+    <dimen name="jy_size_icon_waiting_dialog">25dp</dimen>
+    <dimen name="jy_size_normal_waiting_dialog">16sp</dimen>
+    <dimen name="jy_size_large_waiting_dialog">24sp</dimen>
+    <dimen name="jy_spacing_waiting_dialog">10dp</dimen>
+    <dimen name="jy_spacing_fotgot_dialog">15dp</dimen>
+    <dimen name="jy_spacing_tab_register">10dp</dimen>
+    <dimen name="jy_size_title_register">20sp</dimen>
+    <dimen name="jy_size_register_small">14sp</dimen>
+    <dimen name="jy_size_register_very_small">12sp</dimen>
+    <dimen name="jy_size_forgot_normal">16sp</dimen>
+    <dimen name="jy_size_register_normal">16sp</dimen>
+    <dimen name="jy_size_register_large">18sp</dimen>
+    <dimen name="jy_margin_left_title_back">5dp</dimen>
+    <dimen name="jy_padding_register_fragment">16dp</dimen>
+    <dimen name="jy_padding_sms_verify">22dp</dimen>
+    <dimen name="jy_spacing_sms_verify">10dp</dimen>
+    <dimen name="jy_width_sms_btn">120dp</dimen>
+    <dimen name="jy_height_sms_btn">40dp</dimen>
+    <dimen name="jy_size_clear_icon">20dp</dimen>
+    <dimen name="jy_left_more_icon">15dp</dimen>
+    <dimen name="jy_right_more_icon">5dp</dimen>
+    <dimen name="jy_size_accounts_popup">18sp</dimen>
+    <dimen name="jy_margin_clear_icon">3dp</dimen>
+    <dimen name="jy_padding_accounts_horizontal">10dp</dimen>
+    <dimen name="jy_padding_accounts_vertical">10dp</dimen>
+    <dimen name="jy_size_small_login_dialog">11sp</dimen>
+    <dimen name="jy_title_margin">10dp</dimen>
+    <dimen name="jy_size_pay">20sp</dimen>
+    <dimen name="jy_margin_left_pay">30dp</dimen>
+    <dimen name="jy_padding_pay">8dp</dimen>
+    <dimen name="jy_line">1dp</dimen>
+    <dimen name="jy_paysuccess_img_size">70dp</dimen>
+    <dimen name="jy_paysuccess_margin">18dp</dimen>
+    <dimen name="jy_paysuccess_btn_margin">50dp</dimen>
+    <dimen name="jy_history_order_btn_height">25dp</dimen>
+    <dimen name="jy_history_order_btn_width">55dp</dimen>
+    <dimen name="jy_login_view">6dp</dimen>
+
+</resources>

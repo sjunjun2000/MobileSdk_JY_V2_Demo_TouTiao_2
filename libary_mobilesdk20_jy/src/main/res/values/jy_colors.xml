@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <!--JyLoginDialog-->
+    <color name="jy_color_9you_login_blue">#0d7cc3</color>
+    <color name="jy_gray">#ff808080</color>
+    <color name="jy_blue">#5682e4</color>
+    <color name="jy_line_gray_pay">#eaeaea</color>
+    <color name="jy_bg_gray_pay">#f4f4f4</color>
+    <color name="jy_text_gray_pay">#cbcbcb</color>
+    <color name="jy_bg_blue_pay">#87ceeb</color>
+    <color name="jy_bg_orange_pay">#ff9601</color>
+    <color name="jy_bg_blue_history">#2abbfb</color>
+    <color name="jy_color_text">#fb9f4f</color>
+    <color name="jy_color_text_hint">#ababab</color>
+    <color name="jy_color_verify_time">#4a4a4a</color>
+
+
+
+
+
+    <!--支付-->
+    <color name="jy_bg_pay_success_green">#258c33</color>
+    <color name="jy_bg_history_order_dark_blue">#202f4e</color>
+    <color name="jy_bg_pay_failed_red">#ff0000</color>
+    <color name="jy_light_gray">#666666</color>
+    <color name="jy_bg_dark_blue_back">#5683e5</color>
+</resources>

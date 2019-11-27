@@ -1,0 +1,207 @@
+<resources>
+
+    <!-- MainActivity -->
+    <string name="jy_main_init">初始化</string>
+    <string name="jy_main_login">登录</string>
+    <string name="jy_main_pay">支付</string>
+    <string name="jy_main_logout">注销</string>
+    <string name="jy_main_switch_account">切换账号</string>
+    <string name="jy_main_float_view">悬浮球</string>
+    <string name="jy_main_create_role">游戏创角dataUpload</string>
+    <string name="jy_main_game_loading">游戏加载dataUpload</string>
+    <string name="jy_main_game_currency">游戏币消费dataUpload</string>
+    <string name="jy_main_game_rmb_consume">人民币消费dataUpload</string>
+    <string name="jy_main_game_update_level">角色升级dataUpload</string>
+    <string name="jy_main_game_close">游戏关闭dataUpload</string>
+
+
+
+
+
+    <!-- JyPlatform -->
+    <string name="jy_platform_toast">请先开启相关权限后再进行后续操作</string>
+
+    <!-- JyLoginDialog -->
+    <string name="jy_login_dialog_title">账号登录</string>
+    <string name="jy_login_dialog_account_hint">请输入账号</string>
+    <string name="jy_login_dialog_password_hint">请输入密码</string>
+    <string name="jy_login_dialog_remember">记住密码</string>
+    <string name="jy_login_dialog_auto_login">自动登录</string>
+    <string name="jy_login_tel_register">手机注册&#160;&#160;|&#160;&#160;</string>
+    <string name="jy_login_quick_register">快速注册&#160;&#160;|&#160;&#160;</string>
+    <string name="jy_login_dialog_forgot">忘记密码</string>
+    <string name="jy_login_dialog_kf">联系客服</string>
+    <string name="jy_login_dialog_register">一键注册</string>
+    <string name="jy_login_dialog_login">立即登录</string>
+    <string name="jy_dialog_login_tips_logout">如需注销账号，请登录账户中心安全管理页面。账号一经注销将永久清空所有数据，请谨慎操作。</string>
+    <string name="jy_login_success">，欢迎回来</string>
+
+    <!-- JyRegisterTelDialog -->
+    <string name="jy_tel_register_dialog_title">手机注册</string>
+    <string name="jy_tel_register_dialog_hint">请输入手机号</string>
+    <string name="jy_tel_register_dialog_next_step">下一步</string>
+    <string name="jy_tel_register_dialog_other_login_type">─────&#160;&#160;其他登录方式&#160;&#160;─────</string>
+    <string name="jy_register_dialog_quick_game">快速注册</string>
+
+    <!-- JySmsVerifyDialog -->
+    <string name="jy_sms_verify_dialog_title">请填写短信验证码</string>
+    <string name="jy_sms_verify_dialog_uname_login">账号登录&#160;&#160;|&#160;&#160;</string>
+    <string name="jy_sms_verify_dialog_kf">联系客服</string>
+    <string name="jy_sms_verify_dialog_tel">发送至%s</string>
+
+    <!-- JyRegisterUnameDialog -->
+    <string name="jy_uname_register_dialog_title">用户名注册</string>
+    <string name="jy_uname_register_dialog_vcode_hint">请输入验证码</string>
+    <string name="jy_uname_register_dialog_confirm">确认</string>
+    <string name="jy_uname_register_dialog_protocol">&#160;&#160;注册即同意&#160;&#160;</string>
+    <string name="jy_uname_register_dialog_user_protocol">用户协议</string>
+    <string name="jy_uname_register_dialog_user_private_protocol">&#160;隐私制度</string>
+
+    &#160;
+    <string name="jy_uname_register_dialog_code_error">验证码错误，请重新输入</string>
+    <string name="jy_uname_register_dialog_your_account">账号管理</string>
+
+    <!-- JyNetWorkDialog -->
+    <string name="jy_network_dialog_switch_account">切换账号</string>
+
+
+
+
+    <!-- JyNetWorkDialog -->
+    <string name="jy_reg_comfirm">确定</string>
+    <string name="jy_dologin_dialog_login">正在登录，请稍候&#8230;</string>
+    <string name="jy_dologin_dialog_9you_user">用户</string>
+    <string name="jy_dologin_dialog_welcome">:</string>
+
+    <!-- JyWebViewActivity -->
+    <string name="jy_kf_loading">loading&#8230;</string>
+    <string name="jy_kf_back">返回</string>
+
+    <!-- jy_title.xml -->
+    <string name="jy_title_activity_register">通行证注册</string>
+    <string name="jy_activity_register_back">返回</string>
+
+    <!-- JyRegisterActivity -->
+    <string name="jy_register_by_telephone">手机号注册</string>
+    <string name="jy_register_by_username">用户名注册</string>
+
+    <!-- JyTelRegisterActivity -->
+    <string name="jy_activity_register_current_cellphone">您当前的手机号码</string>
+    <string name="jy_activity_register_other_cellphone">使用其他手机号注册</string>
+    <string name="jy_activity_register_cellphone">请输入手机号码</string>
+    <string name="jy_activity_register_password">请输入密码（必填）</string>
+    <string name="jy_activity_register_password_show">显示密码</string>
+    <string name="jy_activity_register_information_perfection">完善信息</string>
+    <string name="jy_activity_register_register">注册</string>
+    <string name="jy_activity_register_protocol">我同意用户注册协议书</string>
+    <string name="jy_activity_register_wait">正在注册,请稍候&#8230;</string>
+    <string name="jy_activity_register_verify_wait">正在验证,请稍候&#8230;</string>
+    <string name="jy_register_info_pic_tips">恭喜您注册成功！请妥善保管您的账号信息，您的账号密码如下：</string>
+
+    <!-- JySmsVeriftActivity -->
+    <string name="jy_activity_sms_verify_tips">请输入短信中的验证码:</string>
+    <string name="jy_activity_sms_register">注册</string>
+    <string name="jy_activity_sms_verify_get">获取验证码</string>
+    <string name="jy_title_activity_sms_verify">短信验证</string>
+    <string name="jy_activity_sms_sending">正在获取验证码,请稍候&#8230;</string>
+    <string name="jy_activity_sms_verify_success">验证码已发送,请查收短信。</string>
+    <string name="jy_activity_sms_verify_empty">请输入验证码</string>
+    <string name="jy_register_success">注册成功</string>
+    <string name="jy_register_vcode_success">验证码校验正确</string>
+
+    <!-- SmsCountDownTimer -->
+    <string name="jy_activity_sms_verify_resend">重发</string>
+
+    <!-- JyUserNameRegisterActivity -->
+    <string name="jy_activity_register_username">请输入用户名（必填）</string>
+    <string name="jy_activity_register_realname">请输入真实姓名（选填）</string>
+    <string name="jy_activity_register_idnumber">请输入身份证号（选填）</string>
+    <string name="jy_activity_register_account">账号：&#160;</string>
+    <string name="jy_activity_register_pwd">密码：&#160;</string>
+
+
+    <!-- JyAppRequest -->
+    <string name="jy_app_request">数据返回为空</string>
+
+    <!-- JyPayActivity -->
+    <string name="jy_activity_title">支付</string>
+    <string name="jy_activity_bill_search">账单查询</string>
+
+
+    <!-- JyPayTypeActivity -->
+    <string name="jy_pay_list_activity_alipay">支付宝充值</string>
+    <string name="jy_pay_list_activity_wx_pay">微信支付</string>
+    <string name="jy_pay_list_activity_wx_gf_pay">微信支付(官方)</string>
+    <string name="jy_activity_orderno">订单号：</string>
+    <string name="jy_activity_paygame">充值游戏：</string>
+    <string name="jy_activity_user">用户名：</string>
+    <string name="jy_activity_tel">客服电话：</string>
+    <string name="jy_activity_money">实际支付：</string>
+    <string name="jy_activity_alipay">支付宝付款</string>
+    <string name="jy_activity_yuan">%s元</string>
+    <string name="jy_activity_create_order_error">创建订单失败</string>
+    <string name="jy_activity_wxpay">微信付款</string>
+    <string name="jy_activity_trade_name">商品名称</string>
+    <string name="jy_activity_payment_amount">支付金额</string>
+    <string name="jy_activity_amount">￥%s</string>
+    <string name="jy_activity_select_pay_type">请选择支付方式</string>
+    <string name="jy_activity_pay">确认支付￥%s</string>
+    <string name="jy_activity_history">历史订单记录</string>
+    <string name="jy_activity_loading_text">订单处理中，请稍后&#8230;</string>
+
+
+    <!-- JyWxPayActivity -->
+    <string name="jy_activity_install_wx_tips">请先安装微信后再继续支付</string>
+    <string name="jy_activity_install_wxpay_jy_tips">请先安装或升级控件再进行支付</string>
+
+
+    <!-- JyCertificationDialog -->
+    <string name="jy_dialog_certification_title">实名认证</string>
+    <string name="jy_dialog_certification_submit">提交</string>
+    <string name="jy_dialog_certification_cancel">取消</string>
+    <string name="jy_dialog_certification_fcm_failed">提交失败，请重新提交</string>
+
+    <!-- JySwitchAccountActivity -->
+    <string name="jy_activity_switch_account_title">用户中心</string>
+    <string name="jy_activity_passport">通行证:%s</string>
+    <string name="jy_activity_kf_tel">24H客服热线:%s</string>
+
+    <!--JyPayTypeActivity-->
+    <string name="jy_activity_back">返回游戏</string>
+    <string name="jy_activity_tips">提示</string>
+    <string name="jy_activity_pay_failed">等待充值结果返回中，请至游戏中查看，谢谢！</string>
+    <string name="jy_activity_pay_sure">确定</string>
+    <string name="jy_activity_pay_exit">再按一次退出支付</string>
+
+
+
+    <!--JyPayResultActivity-->
+    <string name="jy_activity_pay_success">充值成功</string>
+    <string name="jy_activity_pay_price">-￥%s</string>
+    <string name="jy_activity_pay_gamename">充值游戏</string>
+    <string name="jy_activity_pay_type">付款方式</string>
+    <string name="jy_activity_create_time">创建时间</string>
+    <string name="jy_activity_order_id">订单号</string>
+    <string name="jy_activity_kftel">客服电话:%s</string>
+    <string name="jy_activity_search_history">查看历史订单记录</string>
+    <string name="jy_activity_pay_finish">完成支付</string>
+
+    <!--JyHistoryOrderActivity-->
+    <string name="jy_activity_history_order_title">历史充值记录</string>
+    <string name="jy_activity_history_order_refresh">刷新</string>
+    <string name="jy_activity_history_order_price">-￥%s</string>
+    <string name="jy_activity_history_order_pay_success">支付成功</string>
+    <string name="jy_activity_history_order_pay_failed">支付失败</string>
+    <string name="jy_activity_history_order_more">显示更多</string>
+    <string name="jy_pay_lookup_activity_history_none">您没有历史订单</string>
+    <string name="jy_pay_lookup_activity_no_more">没有更多订单。</string>
+
+
+
+
+
+
+
+
+
+</resources>

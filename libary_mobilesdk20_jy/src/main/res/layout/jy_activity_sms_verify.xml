@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.JySmsVerifyActivity" >
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/jy_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_title"
+        android:padding="@dimen/jy_padding_sms_verify" >
+
+        <TextView
+            android:id="@+id/text_sms_verify_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jy_activity_sms_verify_tips" />
+
+        <LinearLayout
+            android:id="@+id/linear_sms_verify_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_sms_verify_tips"
+            android:layout_marginBottom="@dimen/jy_spacing_login_dialog"
+            android:layout_marginTop="@dimen/jy_spacing_sms_verify"
+            android:background="@android:drawable/edit_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edit_sms_verify_sms"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="6"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/clear_edit_sms"
+                android:layout_width="@dimen/jy_size_clear_icon"
+                android:layout_height="@dimen/jy_size_clear_icon"
+                android:layout_marginLeft="@dimen/jy_margin_clear_icon"
+                android:background="@drawable/jy_selector_ic_clear"
+                android:contentDescription="@string/jy_login_dialog_title"
+                android:src="@drawable/jy_selector_ic_clear" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sms_verify_submit"
+            android:layout_width="@dimen/jy_width_sms_btn"
+            android:layout_height="@dimen/jy_height_sms_btn"
+            android:layout_alignRight="@+id/linear_sms_verify_sms"
+            android:layout_below="@+id/linear_sms_verify_sms"
+            android:layout_marginTop="@dimen/jy_spacing_sms_verify"
+            android:background="@drawable/jy_selector_bg_sms_green_btn"
+            android:padding="@dimen/jy_spacing_sms_verify"
+            android:text="@string/jy_activity_sms_register"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_sms_verify_resend"
+            android:layout_width="@dimen/jy_width_sms_btn"
+            android:layout_height="@dimen/jy_height_sms_btn"
+            android:layout_alignBottom="@+id/btn_sms_verify_submit"
+            android:layout_marginRight="@dimen/jy_spacing_sms_verify"
+            android:layout_toLeftOf="@+id/btn_sms_verify_submit"
+            android:background="@drawable/jy_selector_bg_sms_btn"
+            android:padding="@dimen/jy_spacing_sms_verify"
+            android:text="@string/jy_activity_sms_verify_get"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

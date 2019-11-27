@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/jy_blue"
+        android:orientation="horizontal"
+        android:padding="@dimen/jy_title_margin">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/jy_img_size"
+            android:maxHeight="@dimen/jy_img_size"/>
+
+        <TextView
+            android:id="@+id/tvGameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/jy_margin_left_pay"
+            android:text="爱情公寓消消消"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/jy_size_pay" />
+
+    </LinearLayout>
+
+</LinearLayout>

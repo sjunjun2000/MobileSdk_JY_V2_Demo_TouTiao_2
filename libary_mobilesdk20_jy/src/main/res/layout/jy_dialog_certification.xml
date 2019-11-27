@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/jy_margin_login_dialog"
+    android:background="@mipmap/jy_dialog_bg"
+    android:padding="@dimen/jy_padding_login_dialog" >
+
+    <TextView
+        android:id="@+id/jy_tv_you9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/jy_spacing_login_dialog"
+        android:gravity="center"
+        android:text="@string/jy_dialog_certification_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jy_tv_you9"
+        android:layout_marginBottom="@dimen/jy_spacing_login_dialog"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_certification_realname"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/jy_activity_register_realname"
+            android:inputType="text"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/clear_edit_certification_realname"
+            android:layout_width="@dimen/jy_size_clear_icon"
+            android:layout_height="@dimen/jy_size_clear_icon"
+            android:layout_marginLeft="@dimen/jy_margin_clear_icon"
+            android:background="@drawable/jy_selector_ic_clear"
+            android:contentDescription="@string/jy_login_dialog_title"
+            android:src="@drawable/jy_selector_ic_clear" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_account"
+        android:layout_marginBottom="@dimen/jy_spacing_login_dialog"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_certification_idnumber"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/jy_activity_register_idnumber"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/clear_edit_certification_idnumber"
+            android:layout_width="@dimen/jy_size_clear_icon"
+            android:layout_height="@dimen/jy_size_clear_icon"
+            android:layout_marginLeft="@dimen/jy_margin_clear_icon"
+            android:background="@drawable/jy_selector_ic_clear"
+            android:contentDescription="@string/jy_login_dialog_title"
+            android:src="@drawable/jy_selector_ic_clear" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_login_info"
+        android:minHeight="70dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_certification_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/jy_spacing_login_dialog"
+            android:layout_weight="1"
+            android:background="@drawable/jy_selector_bg_register_btn"
+            android:padding="@dimen/jy_padding_login_btn"
+            android:text="@string/jy_dialog_certification_submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/jy_size_large_login_dialog" />
+
+        <Button
+            android:id="@+id/btn_certification_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/jy_selector_bg_login_btn"
+            android:padding="@dimen/jy_padding_login_btn"
+            android:text="@string/jy_dialog_certification_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/jy_size_large_login_dialog" />
+    </LinearLayout>
+
+</RelativeLayout>

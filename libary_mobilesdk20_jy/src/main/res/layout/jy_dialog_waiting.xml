@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jy_login_bg"
+    android:padding="@dimen/jy_padding_waiting_dialog">
+
+<RelativeLayout
+    android:id="@+id/rl_swaccount"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/jy_color_verify_time"
+        android:textSize="@dimen/jy_size_normal_waiting_dialog"
+        android:layout_centerVertical="true"/>
+
+
+    <Button
+        android:id="@+id/btn_switch_account"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/jy_btn_switch_account_corner_orange_bg"
+        android:text="@string/jy_network_dialog_switch_account"
+        android:textColor="@color/jy_color_text"
+        android:textSize="@dimen/jy_size_normal_waiting_dialog"
+        android:paddingLeft="@dimen/jy_margin_login_dialog"
+        android:paddingRight="@dimen/jy_margin_login_dialog"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit_network"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/jy_btn_login_corner_orange_bg"
+        android:layout_below="@id/rl_swaccount"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="@string/jy_uname_register_dialog_confirm"
+        android:textSize="@dimen/jy_size_normal_waiting_dialog"
+        android:layout_marginTop="@dimen/jy_padding_forgot_dialog"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bInit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_init"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/bLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_login"
+                app:layout_constraintTop_toBottomOf="@+id/bInit"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/bPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_pay"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/bLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_logout"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/bSwitchAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_switch_account"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/bFloatView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_float_view"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/bCreateRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_create_role"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+            <Button
+                android:id="@+id/bGameLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_game_loading"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/bGameCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_game_currency"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/bRmbConsume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_game_rmb_consume"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/bUpdateLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_game_update_level"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+            <Button
+                android:id="@+id/bGameClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_game_close"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/bAutoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_auto_login"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/baccountRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jy_main_account_record"
+                app:layout_constraintTop_toBottomOf="@+id/bLogin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

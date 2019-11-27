@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jy_bg_gray_pay"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/jy_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingTop="@dimen/jy_padding_pay"
+                android:paddingBottom="@dimen/jy_padding_pay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/jy_padding_pay"
+                    android:text="@string/jy_activity_trade_name"
+                    android:textSize="@dimen/jy_size_normal_waiting_dialog" />
+
+                <TextView
+                    android:id="@+id/tvTradeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/jy_padding_pay"
+                    android:text="@string/jy_activity_trade_name"
+                    android:textSize="@dimen/jy_size_normal_waiting_dialog" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/jy_line"
+                android:background="@color/jy_line_gray_pay" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingTop="@dimen/jy_padding_pay"
+                android:paddingBottom="@dimen/jy_padding_pay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/jy_padding_pay"
+                    android:text="@string/jy_activity_payment_amount"
+                    android:textSize="@dimen/jy_size_normal_waiting_dialog" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/jy_padding_pay"
+                    android:text="@string/jy_activity_amount"
+                    android:textSize="@dimen/jy_size_normal_waiting_dialog" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/jy_line"
+                android:background="@color/jy_line_gray_pay" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/jy_padding_pay"
+                android:paddingBottom="@dimen/jy_padding_pay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/jy_padding_pay"
+                    android:text="@string/jy_activity_select_pay_type"
+                    android:textColor="@color/jy_text_gray_pay"
+                    android:textSize="@dimen/jy_size_normal_waiting_dialog" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/rgPayType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbWxGf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/jy_radiobutton_bg"
+                    android:button="@mipmap/jy_wxpay"
+                    android:padding="@dimen/jy_margin_waiting_dialog"
+                    android:visibility="gone"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rbWxH5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/jy_radiobutton_bg"
+                    android:button="@mipmap/jy_wxpay"
+                    android:padding="@dimen/jy_margin_waiting_dialog"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rbAlipay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/jy_radiobutton_bg"
+                    android:button="@mipmap/jy_alipay"
+                    android:padding="@dimen/jy_margin_waiting_dialog"
+                    android:visibility="gone" />
+
+
+
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/jy_line"
+                android:background="@color/jy_line_gray_pay" />
+
+
+            <Button
+                android:id="@+id/btnPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/jy_margin_left_pay"
+                android:layout_marginTop="@dimen/jy_padding_forgot_dialog"
+                android:layout_marginRight="@dimen/jy_margin_left_pay"
+                android:background="@drawable/jy_selector_bg_pay_btn"
+                android:text="@string/jy_activity_pay"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/jy_size_register_normal" />
+
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/jy_margin_left_pay"
+                android:layout_marginTop="@dimen/jy_padding_forgot_dialog"
+                android:layout_marginRight="@dimen/jy_margin_left_pay"
+                android:background="@drawable/jy_selector_bg_history_btn"
+                android:text="@string/jy_activity_history"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/jy_size_register_normal" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/jy_margin_left_pay"
+                android:layout_marginTop="@dimen/jy_padding_forgot_dialog"
+                android:layout_marginRight="@dimen/jy_margin_left_pay"
+                android:background="@drawable/jy_selector_bg_history_btn"
+                android:text="@string/jy_activity_back"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/jy_size_register_normal" />
+
+            <WebView
+                android:id="@+id/wb_wxpay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

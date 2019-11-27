@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/jy_title_bar_bg">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/jy_title_activity_register"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/jy_size_title_register" />
+
+    <Button
+        android:id="@+id/btn_title_back"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/jy_margin_left_title_back"
+        android:background="@drawable/jy_selector_bg_title_back_btn"
+        android:text="@string/jy_activity_register_back"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
